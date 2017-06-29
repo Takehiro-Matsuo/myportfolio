@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+Theme Name: Rurudo Top Page
+Theme URI: http://rurudo.com/
+Description: Rurudo Original Theme
+*/
+
+/*-----------------------------
+リセットCSS + サイト共通設定
+------------------------------*/
+
+/* 全ての要素に対する余白初期値設定 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+del, dfn, em, img,
+small, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tbody, tfoot, thead, tr, th, td,
+article,
+footer, header, nav, section,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+/* デフォルト文字設定 */
+body{
+  color:#444;
+  background-color: #fff;
+  font-family: arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+  font-size: 12px;
+  *font-size:small;
+  line-height:1.4;
+  width: 100%;
+}
+/* リストマーカーを非表示 */
+ul,ol{
+  list-style-type:none;
+}
+/* テーブルセルのボーダーの設定 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 画像とフォームパーツの上下位置をテキストの真ん中に */
+img, input, select, textarea {
+  vertical-align: middle;
+}
+/* デフォルトリンク色の設定 */
+a {
+  color: #666;
+  text-decoration: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+a:hover {
+  color: #45AAB8;
+}
+
+#wrap{
+  width: 1920px;
+}
