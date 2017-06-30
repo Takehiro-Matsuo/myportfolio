@@ -65,7 +65,77 @@ a {
 a:hover {
   color: #45AAB8;
 }
-
+/*
+共通の設定
+*/
 #wrap{
   width: 1920px;
+}
+#header{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 80px;
+  background-color: #FAF8F8;
+}
+.headerLogo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 53%;
+  margin:auto 0;
+  height: 40px;
+  width: 40px;
+  background-color: #FAF8F8;
+}
+.headerLogo img{
+  width: 100%;
+  height: 100%;
+}
+.headerNavi{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 60%;
+  margin: auto 0;
+  width: 300px;
+  height: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+.headerNavi_item{
+  -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.headerNavi_item-state-active{
+  /*border-bottom: #95989A 3px solid;*/
+}
+.headerNavi_item a{
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #6B6D6E;
+}
+.headerNavi_item :hover{
+  color: #ACDFFA;
+  border-bottom: #ACDFFA 3px solid;
+}
+#contents{
+  width: 100%;
+  padding-top: 80px;
+  position: relative;
+}
+/*
+topページの設定
+*/
+#top,
+#introduction,
+#skill,
+#like{
+  width: 100%;
+  height: 600px;
+  position: relative;
 }
