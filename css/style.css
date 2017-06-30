@@ -266,6 +266,7 @@ max-height: 500px;
 .introductionTriangle,
 .skillTriangle{
   position: absolute;
+  z-index: 2;
   bottom: -40px;
   left: 0;
   right: 0;
@@ -281,7 +282,7 @@ max-height: 500px;
 .introductionTitle,
 .skillTitle{
   width: 100%;
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
   font-size: 40px;
 }
@@ -297,7 +298,7 @@ max-height: 500px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 80px;
+  width: 60px;
   border-top: #fff 2px solid;
 }
 #introduction,
@@ -312,4 +313,29 @@ max-height: 500px;
 #skill,
 .skillTriangle{
   background-color:#6A9FDD;
+}
+.skillContents{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 700px;
+  color: #fff;
+}
+.skillContents_left dl,
+.skillContents_right dl{
+  padding-left: 30px;
+}
+.skillContents_left dt,
+.skillContents_right dt{
+  padding-left: 10px;
+  border-left: 5px #fff solid;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.skillContents_left dd,
+.skillContents_right dd{
+  padding-left: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
 }
