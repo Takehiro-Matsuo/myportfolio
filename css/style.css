@@ -69,7 +69,8 @@ a:hover {
 共通の設定
 */
 #wrap{
-  width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 #header{
   position: fixed;
@@ -129,13 +130,121 @@ a:hover {
   position: relative;
 }
 /*
-topページの設定
+ページの設定
 */
 #top,
 #introduction,
 #skill,
 #like{
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   position: relative;
+}
+
+.topName{
+  position: absolute;
+  z-index: 4;
+  top:85px;
+  left: 10px;
+  font-size: 80px;
+  color: #fff;
+}
+.topBlocks{
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 0;
+}
+.topBlocks_block{
+  position: absolute;
+  width: 80px;
+  height: 160px;
+}
+.block-position-top{
+  top: 0px;
+}
+.block-position-bottom{
+  top: 80px;
+}
+.block1,
+.block6{
+  background-color: #FC7B7B;
+}
+.block2,
+.block7{
+  background-color: #FCD34C;
+}
+.block3,
+.block8{
+  background-color: #6A9FDD;
+}
+.block4,
+.block9{
+  background-color: #E889B5;
+}
+.block5,
+.block10{
+  background-color: #45D871;
+}
+.block1{
+  left: 0px;
+}
+.block2{
+  left: 80px;
+}
+.block3{
+  left: 160px;
+}
+.block4{
+  left: 240px;
+}
+.block5{
+  left: 320px;
+}
+.block6{
+  left: 400px;
+}
+.block7{
+  left: 480px;
+}
+.block8{
+  left: 560px;
+}
+.block9{
+  left: 640px;
+}
+.block10{
+  left: 720px;
+}
+.topSpeech{
+  position: absolute;
+  z-index: 4;
+  top: 350px;
+  left: 100px;
+}
+.topSpeech p{
+  font-size: 30px;
+  color: #393A3B;
+}
+.topImg{
+  position: absolute;
+  z-index: 3;
+  top:200px;
+  left: 65%;
+}
+.topImg img{
+  max-width: 500px;
+  width: 70%;
+max-height: 500px;
+  height: 70%;
+}
+.topArrow{
+  position: absolute;
+  z-index: 3;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 36px;
+  height: 36px;
 }
