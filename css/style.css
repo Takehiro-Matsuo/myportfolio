@@ -290,7 +290,7 @@ max-height: 500px;
 .skillUnderline{
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 .introductionUnderline div,
 .skillUnderline div{
@@ -338,4 +338,121 @@ max-height: 500px;
   padding-left: 20px;
   font-size: 13px;
   margin-bottom: 15px;
+}
+.likeTitle{
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.likeTitle_main,
+.likeTitle_sub{
+  width: 100%;
+  text-align: center;
+  color: #66686a;
+}
+.likeTitle_main{
+  font-size: 32px;
+}
+.likeTitle_sub{
+  font-size: 16px;
+}
+.likeContents{
+  position: relative;
+}
+.likeContents_img{
+  position: absolute;
+  z-index: 4;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 320px;
+  height: 200px;
+  }
+  .likeContents_img img{
+    width: 100%;
+    height: 100%;
+    }
+.likeContents_topCat,
+.likeContents_topComic,
+.likeContents_bottomKid,
+.likeContents_bottomLive{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.likeContents_topCat_img,
+.likeContents_topComic_img,
+.likeContents_bottomKid_img,
+.likeContents_bottomLive_img{
+  width: 100%;
+  height: auto;
+}
+.likeContents_topCat_color,
+.likeContents_topComic_color,
+.likeContents_bottomKid_color,
+.likeContents_bottomLive_color{
+  position: absolute;
+  z-index: 2;
+  top:0;
+  left: 0;
+  opacity: 0.7;
+  height: 300px;
+  width: 100%;
+}
+.likeContents_topCat_color,
+.likeContents_topCat_body h2{
+  background-color: #45D871;
+}
+.likeContents_topComic_color,
+.likeContents_topComic_body h2{
+  background-color: #FA657C;
+}
+.likeContents_bottomKid_color,
+.likeContents_bottomKid_body h2{
+  background-color: #FCD34C;
+}
+.likeContents_bottomLive_color,
+.likeContents_bottomLive_body h2{
+  background-color: #E889B5;
+}
+.likeContents_topCat_body,
+.likeContents_topComic_body,
+.likeContents_bottomKid_body,
+.likeContents_bottomLive_body{
+  position: absolute;
+  display: none;
+  z-index: 3;
+  top:30%;
+  left: 10%;
+}
+.likeContents_topCat_body h2,
+.likeContents_topComic_body h2,
+.likeContents_bottomKid_body h2,
+.likeContents_bottomLive_body h2{
+  width: 140px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.likeContents_topCat_body h2{
+  color: #45D871;
+}
+.likeContents_topComic_body h2{
+  color: #FA657C;
+}
+.likeContents_bottomKid_body h2{
+  color: #FCD34C;
+}
+.likeContents_bottomLive_body h2{
+  color: #E889B5;
+}
+.likeContents_topCat_body p,
+.likeContents_topComic_body p,
+.likeContents_bottomKid_body p,
+.likeContents_bottomLive_body p{
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
 }
