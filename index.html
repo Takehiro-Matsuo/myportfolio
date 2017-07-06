@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
 <head>
   <title>MatsuoTakehiro's portfolio Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="松尾健広のポートフォリオサイト">
+  <meta name="keywords" content="松尾健広,MatsuoTakehiro,TakehiroMatsuo,portfolio">
+  <meta name="description" content="松尾健広のウェブポートフォリオ。">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/works.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/aWork.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/contact.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="responsive.css" type="text/css" media="screen, print" />
 </head>
 <body>
@@ -161,6 +169,44 @@
             <!-- #contents -->
           </div>
           <!-- #wrap -->
+          <script>
+          function animate($ani, $valPos) {
+            $(".ani-" + $ani).each(function() {
+              var imgPos = $(this).offset().top;
+              var scroll = $(window).scrollTop();
+              var windowHeight = $(window).height();
+              if (scroll > imgPos - windowHeight + windowHeight / $valPos) {
+                $(this).addClass("animated " + $ani);
+              } else {
+                //$(this).removeClass("animated " + $ani);
+              }
+            });
+          }
+          </script>
+          <script>
+          $(function (){
+            $(".top-mark").click(function() {
+              $( 'html,body' ).animate( {scrollTop:$('#header').offset().top}, 1200);
+            })
+            $(".white-inner").hover(function() {
+              $(this).next("img").fadeTo("fast",1);
+            }, function() {
+              $(this).next("img").fadeTo("fast", 0.4);
+            });
+            $(window).on('touchstart scroll', function(){
+              var timer = false;
+              if (timer !== false) {
+                clearTimeout(timer);
+              }
+              timer = setTimeout(function() {
+                animate('slideInLeft','3');
+                animate('slideInRight','3');
+                animate('slideInUp','3');
+                animate('slideInUpBig','3');
+                animate('slideInDown','3');
+              }, 100);
+            });
+          });
+          </script>
         </body>
-
         </html>

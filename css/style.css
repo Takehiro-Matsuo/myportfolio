@@ -58,8 +58,6 @@ a {
   text-decoration: none;
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
   -ms-transition: 0.5s;
 }
 a:hover {
@@ -130,6 +128,18 @@ a:hover {
   position: relative;
   padding-top: 80px;
 }
+.button{/* div a につける(div width:100%) */
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  padding: 8px 0px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #999;
+  color: #fff;
+  font-size: 20px;
+  }
 /*
 ページの設定
 */
@@ -168,6 +178,7 @@ a:hover {
   position: absolute;
   width: 80px;
   height: 160px;
+  opacity: 0;
 }
 .block-position-top{
   top: 0px;
@@ -228,8 +239,9 @@ a:hover {
 .topSpeech{
   position: absolute;
   z-index: 4;
-  top: 350px;
+  top: 55%;
   left: 100px;
+  opacity: 0;
 }
 .topSpeech p{
   font-size: 30px;
@@ -240,6 +252,7 @@ a:hover {
   z-index: 3;
   top:200px;
   left: 65%;
+  opacity: 0;
 }
 .topImg img{
   max-width: 500px;
@@ -256,6 +269,7 @@ max-height: 500px;
   margin: 0 auto;
   width: 36px;
   height: 36px;
+  opacity: 0;
 }
 #top,
 #introduction,

@@ -54,6 +54,17 @@
   border-radius: 40px;
   border: #747476 1px solid;
 }
+.aWorkButton{
+  width: 100%;
+}
+.aWorkButton button{
+    background-color: #E889B5;
+    border: #E889B5 2px solid;
+}
+.aWorkButton button:hover{
+  background-color: #fff;
+  color: #E889B5;
+}
 .aWorkDetail{
   border: #b1b1af 2px solid;
 }
@@ -99,25 +110,4 @@
   padding-left: 20px;
   font-size: 13px;
   margin-bottom: 15px;
-}
-.aWorkButton{
-  width: 100%;
-}
-.aWorkButton a{
-  display: block;
-  width: 180px;
-  margin: 0 auto;
-  padding: 15px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #E889B5;
-  color: #fff;
-  border-radius: 7px;
-  font-size: 18px;
-  line-height: 18px;
-}
-.aWorkButton a:hover{
-  background-color: #fff;
-  color: #E889B5;
-  border: #E889B5 1px solid;
 }
