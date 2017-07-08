@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="responsive.css" type="text/css" media="screen, print" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -119,9 +120,12 @@
           <h2 class="likeTitle_sub">私が好きなものは</h2>
         </div>
         <div class="likeContents">
-          <div class="likeContents_img"><img src="img/likeImg.png" alt="likeimg"></div>
-          <div class="likeContents_top row">
-            <div class="likeContents_topCat col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+          <!--<div class="likeContents_top row">-->
+          <div class="likeContents_topbottom row">
+            <div class="likeContents_img hoverImg"><img src="img/likeImg.png" alt="likeimg"></div>
+            <div class="likeContents_catInner hoverCat hoverLikeContent"></div>
+            <div class="likeContents_topCat hoverCat hoverLikeContent">
               <img class="likeContents_topCat_img" src="img/cat.jpg" alt="cat">
               <div class="likeContents_topCat_color"></div>
               <div class="likeContents_topCat_body">
@@ -130,7 +134,8 @@
                   動物の中で見ていて一番癒されます</p>
                 </div>
               </div><!-- .likeohContents_topCat -->
-              <div class="likeContents_topComic col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="likeContents_comicInner hoverComic hoverLikeContent"></div>
+              <div class="likeContents_topComic hoverComic hoverLikeContent">
                 <img class="likeContents_topComic_img" src="img/comic.jpg" alt="comic">
                 <div class="likeContents_topComic_color"></div>
                 <h2></h2>
@@ -140,9 +145,10 @@
                     20タイトル以上持っています</p>
                   </div>
                 </div><!-- .likeContents_topComic -->
-              </div><!-- .likeContents_top -->
-              <div class="likeContents_bottom row">
-                <div class="likeContents_bottomKid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <!-- .likeContents_top -->
+                <!--<div class="likeContents_bottom row">-->
+                <div class="likeContents_kidInner hoverKid hoverLikeContent"></div>
+                <div class="likeContents_bottomKid hoverKid hoverLikeContent">
                   <img class="likeContents_bottomKid_img" src="img/kid.jpg" alt="kid">
                   <div class="likeContents_bottomKid_color"></div>
                   <div class="likeContents_bottomKid_body">
@@ -151,7 +157,8 @@
                       週2日ボランティアで子供達と遊んでいます</p>
                     </div>
                   </div><!-- .likeContents_bottomKid -->
-                  <div class="likeContents_bottomLive col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class="likeContents_liveInner hoverLive hoverLikeContent"></div>
+                  <div class="likeContents_bottomLive hoverLive hoverLikeContent">
                     <img class="likeContents_bottomLive_img" src="img/liveimg.jpg" alt="live">
                     <div class="likeContents_bottomLive_color"></div>
                     <div class="likeContents_bottomLive_body">
@@ -160,7 +167,8 @@
                         月に２回ほどライブに参加しています</p>
                       </div>
                     </div><!-- .likeContents_bottomLive -->
-                  </div><!-- .likeContents_bottom -->
+                  </div><!-- .likeContents_topbottom -->
+                  <!-- .likeContents_bottom -->
                 </div>
                 <!-- .likeContents -->
               </section>
@@ -169,6 +177,36 @@
             <!-- #contents -->
           </div>
           <!-- #wrap -->
+          <script type="text/javascript">
+            $(".likeContents_catInner").hover(function() {
+              $(".hoverImg,.hoverLikeContent").addClass("ani-topCat");
+              $(".hoverComic,.hoverKid,.hoverLive").addClass("ani-other");
+            },function () {
+              $(".hoverImg,.hoverLikeContent").removeClass("ani-topCat");
+              $(".hoverComic,.hoverKid,.hoverLive").removeClass("ani-other");
+            });
+            $(".likeContents_comicInner").hover(function() {
+              $(".hoverImg,.hoverLikeContent").addClass("ani-topComic");
+              $(".hoverCat,.hoverKid,.hoverLive").addClass("ani-other");
+            },function () {
+              $(".hoverImg,.hoverLikeContent").removeClass("ani-topComic");
+              $(".hoverCat,.hoverKid,.hoverLive").removeClass("ani-other");
+            });
+            $(".likeContents_kidInner").hover(function() {
+              $(".hoverImg,.hoverLikeContent").addClass("ani-bottomKid");
+              $(".hoverCat,.hoverComic,.hoverLive").addClass("ani-other");
+            },function () {
+              $(".hoverImg,.hoverLikeContent").removeClass("ani-bottomKid");
+              $(".hoverCat,.hoverComic,.hoverLive").removeClass("ani-other");
+            });
+            $(".likeContents_liveInner").hover(function() {
+              $(".hoverImg,.hoverLikeContent").addClass("ani-bottomLive");
+              $(".hoverCat,.hoverComic,.hoverKid").addClass("ani-other");
+            },function () {
+              $(".hoverImg,.hoverLikeContent").removeClass("ani-bottomLive");
+              $(".hoverCat,.hoverComic,.hoverKid").removeClass("ani-other");
+            });
+          </script>
           <script>
           function animate($ani, $valPos) {
             $(".ani-" + $ani).each(function() {

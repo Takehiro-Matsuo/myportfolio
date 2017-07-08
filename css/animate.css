@@ -824,3 +824,93 @@
 .topArrow{
   animation:fadeIn ease-in 6s forwards;
 }
+/* topのlikeのアニメーション */
+.likeContents_topCat,
+.likeContents_topComic,
+.likeContents_bottomKid,
+.likeContents_bottomLive,
+.likeContents_img{
+  -webkit-transition: 1s;
+  transition: 1s;
+}/* 中央の画像の左右の移動 */
+.ani-topCat.likeContents_img,
+.ani-bottomKid.likeContents_img{
+  left: -webkit-calc(100% - 390px);/* 430=270+160 */
+  left: calc(100% - 390px);
+  }
+.ani-topComic.likeContents_img,
+.ani-bottomLive.likeContents_img{
+  left: 70px;/*110=270-160*/
+}/* hoverしている項目のアニメーション */
+.ani-topCat.likeContents_catInner,
+.ani-topCat.likeContents_topCat,
+.ani-topComic.likeContents_comicInner,
+.ani-topComic.likeContents_topComic,
+.ani-bottomKid.likeContents_kidInner,
+.ani-bottomKid.likeContents_bottomKid,
+.ani-bottomLive.likeContents_liveInner,
+.ani-bottomLive.likeContents_bottomLive{
+  width: 100%;
+  height: 100%;
+}/* hoverする側(左側の項目)の正方形のアニメーション */
+.ani-topCat.likeContents_kidInner,
+.ani-topCat.likeContents_bottomKid,
+.ani-bottomKid.likeContents_catInner,
+.ani-bottomKid.likeContents_topCat{
+left: auto;
+right: 230px;
+}/* hoverする側(右側の項目)の正方形のアニメーション */
+.ani-topComic.likeContents_liveInner,
+.ani-topComic.likeContents_bottomLive,
+.ani-bottomLive.likeContents_comicInner,
+.ani-bottomLive.likeContents_topComic{
+left: 230px;
+right: auto;
+}
+.ani-topCat .likeContents_topCat_color,
+.ani-topComic .likeContents_topComic_color,
+.ani-bottomKid .likeContents_bottomKid_color,
+.ani-bottomLive .likeContents_bottomLive_color{
+width: 100%;
+}
+.ani-topCat .likeContents_topCat_body,
+.ani-topComic .likeContents_topComic_body,
+.ani-bottomKid .likeContents_bottomKid_body,
+.ani-bottomLive .likeContents_bottomLive_body{
+  display: inline;
+}/* hoverしていない項目のアニメーション */
+.ani-other.likeContents_catInner,
+.ani-other.likeContents_topCat,
+.ani-other.likeContents_comicInner,
+.ani-other.likeContents_topComic,
+.ani-other.likeContents_kidInner,
+.ani-other.likeContents_bottomKid,
+.ani-other.likeContents_liveInner,
+.ani-other.likeContents_bottomLive{
+  width: 230px;
+  height: 50%;
+}
+.ani-other.likeContents_catInner,
+.ani-other.likeContents_comicInner,
+.ani-other.likeContents_kidInner,
+.ani-other.likeContents_liveInner{
+  z-index: 5;
+  }
+.ani-other.likeContents_topCat,
+.ani-other.likeContents_topComic,
+.ani-other.likeContents_bottomKid,
+.ani-other.likeContents_bottomLive{
+  z-index: 3;
+}
+.ani-other .likeContents_topCat_color,
+.ani-other .likeContents_topComic_color,
+.ani-other .likeContents_bottomKid_color,
+.ani-other .likeContents_bottomLive_color{
+z-index: 4;
+}
+.ani-other .likeContents_topCat_img,
+.ani-other .likeContents_topComic_img,
+.ani-other .likeContents_bottomKid_img,
+.ani-other .likeContents_bottomLive_img{
+  display: none;
+}
