@@ -439,7 +439,7 @@ a:hover {
 .likeContents_bottomLive_img{
   width: 100%;
   height: auto;
-  -webkit-transform: translate(,-20%);
+  -webkit-transform: translate(0,-20%);
   transform: translate(0,-20%);
 }
 .likeContents_catInner,

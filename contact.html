@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="ja">
 <html lang="ja" dir="ltr">
 <head>
   <title>MatsuoTakehiro's portfolio Website</title>
@@ -16,6 +15,8 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="responsive.css" type="text/css" media="screen, print" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -29,8 +30,8 @@
       <nav>
         <ul class="headerNavi">
           <li class="headerNavi_item"><a href="index.html">top</a></li>
-          <li class="headerNavi_item headerNavi_item-state-active"><a href="#works">works</a></li>
-          <li class="headerNavi_item"><a href="contact.html">contact</a></li>
+          <li class="headerNavi_item"><a href="works.html">works</a></li>
+          <li class="headerNavi_item  headerNavi_item-state-active"><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -38,11 +39,11 @@
     <div id="contents">
       <div id="contact">
         <div class="contactTitle"><h1>Contact</h1></div>
-        <div class="contactWritting">
+        <div class="contactWritting wow fadeInUp">
           <p>このサイトへのコメントなど、私に対して何か興味を持っていただけたなら
             ご気軽に下記のフォームから、またはfacebookの方からご連絡いただけると嬉しいです。</p>
           </div>
-          <div class="contactForm">
+          <div class="contactForm wow fadeInUp">
               <form class="contactFormContents"action="send.php" method="post">
                 <label for="name">お名前</label>
                 <input placeholder="山田 太郎" type="text" id="name" name="name" value="" tabindex="1" required>
@@ -50,12 +51,13 @@
                 <input placeholder="yamada@taro.com" type="text" id="email" name="email" value="" tabindex="2" required>
                 <label for="detail">内容</label>
                 <textarea placeholder="意見やコメントなど" name="detail" id="detail" value="" tabindex="3" required></textarea>
-                <div class="contactFormContents_button"><button class="button buttonTransition"name="send" type="submit" id="">Send</button></div>
+                <div class="contactFormContents_button"><button class="button transition"name="send" type="submit" id="">Send</button></div>
               </form><!-- .contactForm_contents -->
           </div><!-- contactForm -->
-          <p class="contactOr">or</p>
-          <div class="contactFacebook"><button class="button buttonTransition" type="button" onclick="location.href='https://www.facebook.com/takehiro.matsuo.357?fref=ts'">Facebook</button></div>
+          <p class="contactOr wow fadeInUp">or</p>
+          <div class="contactFacebook wow fadeInUp"><button class="button transition" type="button" onclick="location.href='https://www.facebook.com/takehiro.matsuo.357?fref=ts'">Facebook</button></div>
         </div><!-- #contact -->
       </div><!-- #contents -->
+      <script>new WOW().init();</script>
     </body>
     </html>

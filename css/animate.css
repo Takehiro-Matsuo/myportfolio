@@ -755,8 +755,8 @@
 .ani-slideInRight.animated{
   opacity: 1;
 }
-/*buttonTransition*/
-.buttonTransition{
+/*transition*/
+.transition{
   -webkit-transition: 1s;
   transition: 1s;
   }
@@ -824,6 +824,8 @@
 .topArrow{
   animation:fadeIn ease-in 6s forwards;
 }
+/* wow.min.jsを利用するためのcss */
+.wow{visibility: hidden;}
 /* topのlikeのアニメーション */
 .likeContents_topCat,
 .likeContents_topComic,
@@ -913,4 +915,9 @@ z-index: 4;
 .ani-other .likeContents_bottomKid_img,
 .ani-other .likeContents_bottomLive_img{
   display: none;
+}
+/* worksの作品にhoverした時 */
+.hoverWorks .item_body_img{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
 <head>
   <title>MatsuoTakehiro's portfolio Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="松尾健広のポートフォリオサイト">
+  <meta name="keywords" content="松尾健広,MatsuoTakehiro,TakehiroMatsuo,portfolio">
+  <meta name="description" content="松尾健広のウェブポートフォリオ。">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="css/works.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/aWork.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/contact.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen, print" />
   <link rel="stylesheet" href="responsive.css" type="text/css" media="screen, print" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -33,29 +42,29 @@
         <section class="worksDesign">
           <h2 class="worksDesign_title">Design</h2>
           <ul class="worksDesign_items row">
-            <li class="worksDesign_items_item left col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <li class="worksDesign_items_item left wow fadeInUp col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <a class="worksDesign_items_item_inner" href="aWork.html">
               <div class="worksDesign_items_item_body">
-                <h4><span>新社会ボランティアサークル</span></h4>
-                <img class="item_body_img"src="img/shinshakai1.png" alt="新社会ボランティアサークル">
+                <h4 class="transition"><span>新社会ボランティアサークル</span></h4>
+                <img class="item_body_img transition"src="img/shinshakai1.png" alt="新社会ボランティアサークル">
               </div><!-- .worksDesign_items_item_body -->
               <h3 class="worksDesign_items_item_title">新社会ボランティアサクール</h3>
             </a><!-- worksDesign_items_item_inner -->
             </li><!-- .worksDesign_items_item -->
-            <li class="worksDesign_items_item right col-xs-12 col-sm-6 col-md-6 col-lg-6" href="aWork.html">
+            <li class="worksDesign_items_item right wow fadeInUp col-xs-12 col-sm-6 col-md-6 col-lg-6" href="aWork.html">
               <a class="worksDesign_items_item_inner" href="">
               <div class="worksDesign_items_item_body">
-                  <h4><span>祇園るるど</span></h4>
-                <img class="item_body_img"src="img/rurudo1.png" alt="祇園るるど">
+                  <h4 class="transition"><span>祇園るるど</span></h4>
+                <img class="item_body_img transition"src="img/rurudo1.png" alt="祇園るるど">
               </div><!-- .worksDesign_items_item_body -->
               <h3 class="worksDesign_items_item_title">祇園るるど</h3>
             </a><!-- .worksDesign_items_item_inner -->
           </li><!-- .worksDesign_items_item -->
-            <li class="worksDesign_items_item left col-xs-12 col-sm-6 col-md-6 col-lg-6" href="aWork.html">
+            <li class="worksDesign_items_item left wow fadeInUp col-xs-12 col-sm-6 col-md-6 col-lg-6" href="aWork.html">
               <a class="worksDesign_items_item_inner" href="">
               <div class="worksDesign_items_item_body">
-                  <h4><span>日本チャレンジ</span></h4>
-                <img class="item_body_img"src="img/japanchallenge1.png" alt="日本チャレンジ">
+                  <h4 class="transition"><span>日本チャレンジ</span></h4>
+                <img class="item_body_img transition"src="img/japanchallenge1.png" alt="日本チャレンジ">
               </div><!-- .worksDesign_items_item_body -->
               <h3 class="worksDesign_items_item_title">日本チャレンジ</h3>
             </a><!-- .worksDesign_items_item_inner -->
@@ -64,8 +73,17 @@
         </section><!-- .worksDesign -->
         <section class="worksProduct">
           <h2 class="worksProduct_title">Product</h2>
+          <h3>今後増える予定です。</h3>
         </section><!-- .worksProduct -->
       </div><!-- #works -->
     </div><!-- #contents -->
+    <script>new WOW().init();</script>
+    <script>
+    $(".worksDesign_items_item_inner").hover(function() {
+      $(this).find(".worksDesign_items_item_body").addClass("hoverWorks");
+    },function () {
+      $(this).find(".worksDesign_items_item_body").removeClass("hoverWorks");
+    });
+    </script>
   </body>
   </html>
