@@ -742,17 +742,25 @@
 /*======
 自作のアニメーション
 =======*/
-/* アニメーション始め見えないあとから見える */
-.ani-slideInUp,
-.ani-slideInDown,
-.ani-slideInLeft,
-.ani-slideInRight{
-  opacity: 0;
+/* ハンバーガナビメニューのアニメーション */
+.openHeaderNavi .headerNaviItems{
+  background-color: #747677;
 }
-.ani-slideInUp.animated,
-.ani-slideInDown.animated,
-.ani-slideInLeft.animated,
-.ani-slideInRight.animated{
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(1){
+  top:11px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(2),
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(3){
+  top:11px;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.openHeaderNavi .headerNaviItems{
+  right: 0;
+}
+.openHeaderNavi .headerNaviItems_item a{
   opacity: 1;
 }
 /*transition*/
@@ -813,7 +821,7 @@
 }
 /* topのSpeech */
 .topSpeech,
-.topImg{
+.topTree{
   -webkit-animation: fadeIn 1.5s;
   animation: fadeIn 1.5s;
   -webkit-animation-delay: 2s;
