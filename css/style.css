@@ -326,10 +326,12 @@ a:hover {
 }
 #top{
   min-height: 540px;
+  max-height: 660px;
 }
 #introduction,
 #skill{
-  min-height: 610px;
+  min-height: 590px;
+  max-height: 660px;
 }
 #introduction,
 #skill{
@@ -417,9 +419,6 @@ a:hover {
   padding-left: 20px;
   font-size: 13px;
   margin-bottom: 15px;
-}
-#like{
-  margin-bottom: 20px;
 }
 .likeTitle{
   padding-top: 80px;
