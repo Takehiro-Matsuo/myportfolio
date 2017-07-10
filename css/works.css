@@ -27,7 +27,7 @@ works.htmlのcss
   border-bottom: #797B7C 3px solid;
 }
 .worksDesign_items_item{
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   position: relative;
 }
 /*jsでa:hoverの時h4と黒くする*/
@@ -76,14 +76,56 @@ works.htmlのcss
   opacity: 0.6;
 }
 .worksDesign_items_item_title{
-  padding: 20px 0;
+  padding-top: 20px;
   text-align: center;
   font-size: 16px;
 }
 .worksProduct h3{
-  width: 100%;
   margin-left: 80px;
   margin-bottom: 50px;
   font-size: 25px;
   color: #797B7C;
+}
+@media screen and (max-width: 768px){
+  .worksDesign_items_item_title{
+      font-size: 20px;
+  }
+  .worksProduct h3{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 560px){
+  .worksDesign_items_item{
+    margin-bottom: 40px;
+  }
+  .worksDesign_items_item_inner{
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 480px){
+  .worksDesign_title,
+  .worksProduct_title{
+    margin-bottom: 30px;
+  }
+  .worksDesign_items_item{
+    margin-bottom: 30px;
+  }
+  .worksDesign_items_item_title{
+      font-size: 16px;
+  }
+}
+@media (max-width: 410px) {
+  .worksDesign_items_item{
+    margin-bottom: 20px;
+  }
+  .worksDesign_items_item_inner{
+    margin: 0 20px;
+  }
+  .worksDesign_items_item_title{
+      font-size: 14px;
+  }
+  .worksProduct h3{
+    margin-left: 50px;
+    font-size: 20px;
+  }
 }
