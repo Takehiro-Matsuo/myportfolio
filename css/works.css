@@ -86,7 +86,17 @@ works.htmlのcss
   font-size: 25px;
   color: #797B7C;
 }
+@media screen and (max-width: 996px){
+  .worksDesign_items_item_body h4{
+    height: 36px;
+    font-size: 20px;
+    }
+}
 @media screen and (max-width: 768px){
+  .worksDesign_items_item_body h4{
+    height: 42px;
+    font-size: 26px;
+    }
   .worksDesign_items_item_title{
       font-size: 20px;
   }
@@ -113,6 +123,10 @@ works.htmlのcss
   .worksDesign_items_item_title{
       font-size: 16px;
   }
+  .worksDesign_items_item_body h4{
+    height: 38px;
+    font-size: 22px;
+    }
 }
 @media (max-width: 410px) {
   .worksDesign_items_item{
@@ -124,6 +138,10 @@ works.htmlのcss
   .worksDesign_items_item_title{
       font-size: 14px;
   }
+  .worksDesign_items_item_body h4{
+    height: 32px;
+    font-size: 18px;
+    }
   .worksProduct h3{
     margin-left: 50px;
     font-size: 20px;

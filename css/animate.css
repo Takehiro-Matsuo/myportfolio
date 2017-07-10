@@ -593,8 +593,8 @@
 .likeContents_bottomKid,
 .likeContents_bottomLive,
 .likeContents_img{
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
 }/* 中央の画像の左右の移動 */
 .ani-topCat.likeContents_img,
 .ani-bottomKid.likeContents_img{

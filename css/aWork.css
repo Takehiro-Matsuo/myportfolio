@@ -128,6 +128,14 @@
     width: 30px;
     height: 30px;
   }
+  .aWorkDetailContents_left dt,
+  .aWorkDetailContents_right dt{
+    padding-left: 0;
+  }
+  .aWorkDetailContents_left dd,
+  .aWorkDetailContents_right dd{
+    padding-left: 10px;
+  }
 }
 @media (max-width: 646px){
   .aWorkTitle{
@@ -195,14 +203,12 @@
   }
   .aWorkDetailContents_left dt,
   .aWorkDetailContents_right dt{
-    padding-left: 0;
     border-left: 5px #fff solid;
     font-size: 14px;
     margin-bottom: 10px;
   }
   .aWorkDetailContents_left dd,
   .aWorkDetailContents_right dd{
-    padding-left: 10px;
     font-size: 12px;
     margin-bottom: 10px;
   }

@@ -24,7 +24,7 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 996px){
+@media screen and (max-width: 970px){
   .headerNaviItems{
     right: 15%;
   }
@@ -210,7 +210,7 @@
   }
   .likeContents_topComic_body,
   .likeContents_bottomLive_body{
-    left: 55%;
+    left: 52%;
   }
   /*.topTree{
   z-index: 2;
@@ -279,12 +279,13 @@ height: 150px;
   .likeContents_topComic_body p,
   .likeContents_bottomKid_body p,
   .likeContents_bottomLive_body p{
+    padding-right: 20px;
     font-size: 16px;
     line-height: 24px;
   }
 
 }
-@media (max-width: 410px) {
+@media (max-width: 414px) {
   .topName{
     top:35%;
     font-size: 50px;
