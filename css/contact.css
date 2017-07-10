@@ -9,17 +9,21 @@
   font-size: 40px;
   color: #686B6C;
 }
-.contactWritting p{
+.contactWritting{
+  margin: 30px 0;
+}
+.contactWritting p,
+.contactForm{
+  width: 85%;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
+}
+.contactWritting p{
   font-size: 16px;
   color: #686B6C;
 }
-.contactForm{
-  max-width: 500px;
-  margin: 0 auto;
-}
 .contactFormContents{
+  margin: 0 50px;
   margin-top: 40px;
 }
 .contactFormContents label{
@@ -65,4 +69,34 @@
 .contactFacebook button:hover{
   background-color: #fff;
   color: #6A9FDD;
+}
+@media (max-width: 560px) {
+  .contactWritting p,
+  .contactForm{
+    width: 90%;
+  }
+  .contactFormContents{
+    margin: 0 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .contactWritting{
+    margin: 20px 0;
+  }
+  .contactFormContents{
+    margin: 0 20px;
+  }
+  .contactWritting p{
+    font-size: 13px;
+  }
+  .contactFormContents label{
+    font-size: 13px;
+  }
+  .contactOr{
+    font-size: 24px;
+  }
+  .contactFacebook{
+    margin-bottom: 30px;
+  }
 }
