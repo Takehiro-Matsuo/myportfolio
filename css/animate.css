@@ -587,7 +587,6 @@
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
-
 @-webkit-keyframes fadeOutUpBig {
   from {
     opacity: 1;
@@ -827,6 +826,15 @@
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+}
+@media (max-width: 768px) {
+.topTree{
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  display: none;
+}
 }
 /* topのArrow jsでパルスする*/
 .topArrow{

@@ -4,7 +4,7 @@
     height: 250px;
   }
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1094px){
   .topName{
     top:72px;
     font-size: 60px;
@@ -57,6 +57,179 @@
     line-height: 80px;
     font-size: 30px;
     color: #fff;
+  }
+  .topName{
+    top:35%;
+    left: 10px;
+    line-height: 1.0;
+    font-size: 80px;
+    color: #747677;
+  }
+  .topBlocks{
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 300px;
+    height: 70px;
+  }
+  .block-position-bottom{
+    top: 0;
+  }
+  .block1{
+    left: 0px;
+  }
+  .block2{
+    -webkit-height: calc(100% + 50% * 1);
+    height: calc(100% + 50% * 1);
+  }
+  .block3{
+    -webkit-height: calc(100% + 10% * 2);
+    height: calc(100% + 50% * 2);
+    }
+  .block4{
+    -webkit-height: calc(100% + 10% * 3);
+    height: calc(100% + 50% * 3);
+    }
+  .block5{
+    -webkit-height: calc(100% + 10% * 4);
+    height: calc(100% + 50% * 4);
+    }
+  .block6{
+    -webkit-height: calc(100% + 10% * 5);
+    height: calc(100% + 50% * 5);
+    }
+  .block7{
+    -webkit-height: calc(100% + 10% * 6);
+    height: calc(100% + 50% * 6);
+    }
+  .block8{
+    -webkit-height: calc(100% + 10% * 7);
+    height: calc(100% + 50% * 7);
+    }
+  .block9{
+    -webkit-height: calc(100% + 10% * 8);
+    height: calc(100% + 50% * 8);
+    }
+  .block10{
+    -webkit-height: calc(100% + 10% * 9);
+    height: calc(100% + 50% * 9);
+    }
+    .topSpeech{
+      top: 70%;
+      left: 10px;
+    }
+    .introductionWritting{
+        width: 510px;
+    }
+    .introductionWritting p{
+      font-size: 12px;
+    }
+    .skillContents{
+      width: 60%;
+    }
+
+    .skillContents_left dl,
+    .skillContents_right dl{
+      padding-left: 30px;
+    }
+    .skillContents_left dt,
+    .skillContents_right dt{
+      padding-left: 8px;
+      border-left: 4px #fff solid;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    .skillContents_left dd,
+    .skillContents_right dd{
+      padding-left: 12px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    /*.topTree{
+    z-index: 2;
+    right: 10%;
+    opacity: 0;
+  }
+  .topTree img{
+    width: 150px;
+    height: 150px;
+  }*/
+}
+@media (max-width: 610px) {
+  .introductionWritting{
+    width: 90%;
+  }
+  .introductionWritting p{
+    font-size: 11px;
+  }
+}
+@media (max-width: 560px) {
+  .topName{
+    top:35%;
+    font-size: 65px;
+  }
+  .topBlocks{
+    width: 200px;
+    height: 60px;
+  }
+    .topSpeech{
+      top: 65%;
+      left: 10px;
+    }
+    .introductionWritting p{
+      text-align: left;
+    }
+    .skillContents_left dl,
+    .skillContents_right dl{
+      padding-left: 20px;
+    }
+    .skillContents_left dt,
+    .skillContents_right dt{
+      padding-left: 5px;
+      border-left: 3px #fff solid;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .skillContents_left dd,
+    .skillContents_right dd{
+      padding-left: 10px;
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 470px) {
+    .topName{
+      font-size: 60px;
+    }
+    .topSpeech p{
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 410px) {
+    .topName{
+      top:35%;
+      font-size: 50px;
+    }
+    .topBlocks{
+      width: 160px;
+      height: 60px;
+    }
+    .topSpeech{
+      top: 60%;
+    }
+    .topSpeech p{
+      font-size: 20px;
+    }
+  .introductionTriangle,
+  .skillTriangle{
+    bottom: -25px;
+    width: 50px;
+    height: 50px;
+    }
+  .introductionTitle,
+  .skillTitle{
+    padding-top: 50px;
+    font-size: 36px;
   }
 }
 /*
